@@ -34,7 +34,38 @@
     flex:1;
 }
 .img{
-    flex: 1;
-    width: 30%;
+    width: 50%;
+    height: auto;
     align-self: center;
+}
+
+.draw-container{
+    border: 1px solid black;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.draw-line-container{
+    flex: 1;
+    display: flex;
+    border: 1px solid black;
+    margin:0;
+}
+
+.draw-cube{
+    flex: 1;
+    border:1px solid black;
+    margin:0;
+    transition:0s 180s;
+}
+.hovered:hover
+{
+    background-color: black;
+    transition-delay: 0s;
+    visibility: visible;
 }
