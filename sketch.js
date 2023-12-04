@@ -14,7 +14,7 @@ function draw(drawContainer,row,col){
         for (var j = 0; j < col; j++) {
             drawCube[j] = document.createElement('div');
             drawCube[j].classList.add('draw-cube');
-            drawCube[j].classList.add('hovered');
+            drawCube[j].classList.toggle('hovered');
 
         lineContainer[i].appendChild(drawCube[j]);
         }
